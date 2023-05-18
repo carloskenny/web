@@ -5,15 +5,12 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Eu Resolvo',
-  description: 'Serviços de manutenção doméstica e informática.',
+  title: 'Project Web Template',
+  description:
+    'Project create with React, Next.js, Tailwind, ESlint, Rocketseat React',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
